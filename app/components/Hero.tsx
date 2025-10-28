@@ -37,7 +37,6 @@ export default function Hero() {
               </a>
             </div>
           </div>
-
           {/* Image */}
           <div className="flex items-center justify-end md:justify-end md:-mr-6">
             <div
