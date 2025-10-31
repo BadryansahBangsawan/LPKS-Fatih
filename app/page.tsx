@@ -6,7 +6,6 @@ import Operations from "./components/Operations";
 import News from "./components/News";
 import Sustainability from "./components/Sustainability";
 import Careers from "./components/Careers";
-import Jobs from "./components/Jobs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -22,7 +21,6 @@ export default function Home() {
         <News />
         <Sustainability />
         <Careers />
-        <Jobs />
         <Contact />
       </main>
       <Footer />
