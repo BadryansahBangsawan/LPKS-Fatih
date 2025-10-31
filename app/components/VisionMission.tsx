@@ -54,9 +54,7 @@ export default function VisionMission() {
     <section id="about" className="min-h-screen flex items-start py-20">
       <div className="mx-auto w-full md:w-[1274px] px-6 md:px-0">
         <div className="rounded-2xl border border-neutral-200 bg-white shadow-sm w-full h-[725px] p-12 overflow-hidden">
-          {/* Wrapper diubah agar kiri, bukan tengah */}
           <div className="h-full flex flex-col items-start">
-            {/* Tabs */}
             <div className="mb-12 flex gap-6">
               <button
                 onClick={() => setActiveTab("mission")}
@@ -100,7 +98,6 @@ export default function VisionMission() {
         </div>
       </div>
 
-      {/* Styling gambar */}
       <style jsx>{`
         .photo-wrap > img {
           width: 100%;
