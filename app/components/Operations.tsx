@@ -1,60 +1,77 @@
-// Use public images directly to preserve original sizes and avoid alias issues
-
 export default function Operations() {
-  const cards = [
+  const projects = [
     {
       title: "A Sustainable Approach to Mining",
-      text: "Pendekatan berkelanjutan dalam kegiatan operasional.",
-      img: "/Operation and project/1.png",
+      status: "Under Progress",
+      excerpt:
+        "Explore LPKS Tana Ilmu's innovative, eco-friendly training methods. Learn about the technologies and practices used to reduce the environmental impact while maintaining high-quality training standards. The focus is on how these techniques not only ensure excellent professional development but also protect local ecosystems and promote long-term environmental sustainability.",
+      image: "/Operation and project/1.png",
     },
     {
-      title: "Restoration Projects",
-      text: "Komitmen kami terhadap restorasi dan rehabilitasi.",
-      img: "/Operation and project/2.png",
+      title: "Restoring Nature, Supporting Communities",
+      status: "Under Progress",
+      excerpt:
+        "Discover LPKS Tana Ilmu's commitment to environmental restoration and community engagement after training activities. See how we work with local communities to implement sustainable practices, restore natural areas, and create economic opportunities. Read about the positive impact these projects have on the environment and local economy.",
+      image: "/Operation and project/2.png",
     },
-  ];
-
-  const tabs = [
-    "A Sustainable Approach to Mining",
-    "Restoration Projects",
-    "Golden Horizon Project",
-    "Evergreen Gold Reserve",
-    "Golden Valley Venture",
-    "Sovereign Metals Initiative",
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex items-center py-16">
-      <div className="mx-auto max-w-6xl px-6">
-        <h3 className="text-xl font-semibold text-neutral-900">
-          Our Operations and Projects
-        </h3>
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          {cards.map((c) => (
+    <section id="projects" className="py-24 bg-neutral-50">
+      <div className="mx-auto max-w-[1500px] px-20">
+        {/* Header */}
+        <div className="mb-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <h3 className="text-4xl md:text-5xl font-bold text-neutral-900 leading-tight ml-6">
+            Our Operations and <br className="hidden md:block" />
+            Projects
+          </h3>
+          <a
+            href="#projects"
+            className="rounded-md bg-[#8B5A2B] px-8 py-4 text-base font-medium text-white hover:opacity-90 transition flex items-center gap-2"
+          >
+            See Projects
+            <span className="text-lg">→</span>
+          </a>
+        </div>
+
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 gap-16 justify-between">
+          {projects.map((p) => (
             <article
-              key={c.title}
-              className="overflow-hidden rounded-lg border border-neutral-200 bg-white"
+              key={p.title}
+              className="flex bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition w-[620px] h-[381px]"
             >
-              <img src={c.img} alt="" className="w-full h-auto" />
-              <div className="p-6">
-                <h4 className="text-lg font-semibold">{c.title}</h4>
-                <p className="mt-1 text-sm text-neutral-600">{c.text}</p>
-                <a href="#" className="mt-3 inline-block text-sm primary-text">
-                  Read more →
+              {/* Gambar */}
+              <div className="w-[264px] h-full flex-shrink-0">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+
+              {/* Konten */}
+              <div className="flex flex-col justify-between p-6 text-left w-[365px]">
+                <div>
+                  <p className="text-[14px] font-semibold text-[#8B5A2B] mb-2">
+                    {p.status}
+                  </p>
+                  <h4 className="text-[20px] font-bold text-neutral-900 leading-snug mb-3">
+                    {p.title}
+                  </h4>
+                  <p className="text-neutral-600 leading-relaxed text-[13px]">
+                    {p.excerpt}
+                  </p>
+                </div>
+
+                <a
+                  href="#"
+                  className="mt-4 inline-flex items-center gap-2 text-[#8B5A2B] font-medium hover:underline"
+                >
+                  Read More <span className="text-lg">→</span>
                 </a>
               </div>
             </article>
-          ))}
-        </div>
-
-        <div className="mt-6 grid grid-cols-2 gap-2 rounded-md bg-neutral-900 p-2 text-[11px] text-white md:grid-cols-6">
-          {tabs.map((t) => (
-            <div
-              key={t}
-              className="rounded-sm bg-white/10 px-3 py-2 text-center"
-            >
-              {t}
-            </div>
           ))}
         </div>
       </div>

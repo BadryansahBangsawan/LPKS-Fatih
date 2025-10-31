@@ -1,48 +1,66 @@
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+
 export default function Sustainability() {
   const items = [
     {
       title: "Green Extraction",
-      text: "Optimasi proses agar ramah lingkungan dan efisien.",
+      text: "Experience gold sourced through eco–friendly techniques that protect the land and reduce environmental impact.",
+      src: "/Sustainability/1.png",
+      alt: "Green extraction operation",
     },
-    { title: "Water Recycling", text: "Daur ulang air untuk menekan limbah." },
+    {
+      title: "Water Recycling",
+      text: "Choose gold produced with a focus on water conservation.",
+      src: "/Sustainability/2.png",
+      alt: "Worker in factory with clipboard",
+    },
     {
       title: "Land Reclamation",
-      text: "Pemulihan lahan pasca kegiatan operasi.",
+      text: "Support the future of local ecosystems and economies with gold that comes from reclaimed land.",
+      src: "/Sustainability/3.png",
+      alt: "Team discussing reclamation process",
     },
-  ];
+  ] as const;
 
   return (
-    <section className="primary-bg min-h-screen flex items-center py-14 text-white">
-      <div className="mx-auto max-w-6xl px-6">
-        <h3 className="text-xl font-semibold">
+    <section className="primary-bg min-h-screen flex items-center py-20">
+      <div className="mx-auto max-w-6xl px-6 md:px-12">
+        <h2 className="font-poppins text-[40px] md:text-[48px] font-semibold tracking-tight text-white">
           Your Source for Sustainable Gold
-        </h3>
-        <p className="mt-2 max-w-3xl text-sm text-white/90">
-          Today it remains one of the most valuable, sought-after metals
-          globally. There are great opportunities and responsibilities within
-          environmental values.
+        </h2>
+        <p className="mt-4 max-w-4xl text-white/90">
+          Today’s customers care is all about both quality and sustainability.
+          That’s why our operations are designed with the environment in mind.
+          With each ounce of gold, you’re not only investing in a valuable
+          asset, but also in ethical mining practices that protect the earth for
+          future generations.
         </p>
 
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-10 md:grid-cols-3">
           {items.map((i) => (
-            <article
-              key={i.title}
-              className="rounded-md bg-white/10 p-4 backdrop-blur"
-            >
-              <div className="h-32 w-full rounded bg-white/20" />
-              <h4 className="mt-3 font-semibold">{i.title}</h4>
-              <p className="mt-1 text-sm text-white/90">{i.text}</p>
-              <a href="#" className="mt-2 inline-block text-sm underline">
-                Learn more
+            <article key={i.title}>
+              <img
+                src={i.src}
+                alt={i.alt}
+                className="h-56 w-full rounded-lg object-cover"
+              />
+              <h3 className="mt-6 text-xl font-semibold">{i.title}</h3>
+              <p className="mt-3 text-white/80">{i.text}</p>
+              <a
+                href="#"
+                className="mt-6 inline-flex items-center gap-2 text-white transition group"
+              >
+                <span className="underline underline-offset-4">Learn More</span>
+                <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </article>
           ))}
         </div>
 
-        <div className="mt-6">
+        <div className="mt-12 flex justify-center">
           <a
             href="#"
-            className="rounded-md bg-white px-4 py-2 text-sm font-medium text-neutral-900"
+            className="rounded-xl bg-white px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-medium text-[#8b5a2b] transition-all hover:bg-[#f5f5f5] hover:shadow-md"
           >
             Our Sustainability Report
           </a>
