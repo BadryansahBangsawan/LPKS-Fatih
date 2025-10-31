@@ -37,7 +37,11 @@ const statItems: StatItem[] = [
 
 export default function Stats() {
   return (
-    <section className="min-h-screen flex items-center py-24">
+    // Use a solid background and new stacking context to avoid any subpixel hairline from adjacent sections
+    <section
+      id="stats"
+      className="relative isolate min-h-screen flex items-center py-24 bg-white"
+    >
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <h2 className="mb-4 text-center font-poppins text-[48px] font-semibold tracking-tight text-neutral-900">
           Investing in Gold, Investing in Stability

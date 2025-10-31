@@ -23,9 +23,9 @@ export default function Sustainability() {
   ] as const;
 
   return (
-    <section className="primary-bg min-h-screen flex items-center py-20">
+    <section className="relative isolate layer-fix primary-bg min-h-screen flex items-center py-20">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
-        <h2 className="font-poppins text-[40px] md:text-[48px] font-semibold tracking-tight text-white">
+        <h2 className="font-poppins text-[40px] md:text-[48px] font-semibold tracking-tight !text-white">
           Your Source for Sustainable Gold
         </h2>
         <p className="mt-4 max-w-4xl text-white/90">
@@ -44,7 +44,7 @@ export default function Sustainability() {
                 alt={i.alt}
                 className="h-56 w-full rounded-lg object-cover"
               />
-              <h3 className="mt-6 text-xl font-semibold">{i.title}</h3>
+              <h3 className="mt-6 text-xl font-semibold !text-white">{i.title}</h3>
               <p className="mt-3 text-white/80">{i.text}</p>
               <a
                 href="#"

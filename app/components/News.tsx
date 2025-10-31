@@ -32,7 +32,10 @@ export default function News() {
   const p = posts[0];
 
   return (
-    <section id="news" className="min-h-screen flex items-center py-24">
+    <section
+      id="news"
+      className="layer-fix min-h-screen flex items-center py-24 bg-white"
+    >
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <h2 className="text-center font-poppins text-[48px] font-semibold tracking-tight text-neutral-900">
           News & Blogs

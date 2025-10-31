@@ -54,6 +54,15 @@ html {
   background-color: var(--primary);
 }
 
+/* Create a fresh GPU layer and stacking context to avoid subpixel hairlines */
+.layer-fix {
+  position: relative;
+  isolation: isolate;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
 .share-bar {
   background: rgba(0, 0, 0, 0.03);
 }
@@ -67,15 +76,17 @@ html {
 }
 
 /* Typography: use Poppins for all headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-sans), Arial, sans-serif;
-  font-weight: 700;
-  color: #0d1317;
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans), Arial, sans-serif;
+    font-weight: 700;
+    color: #0d1317;
+  }
 }
 
 /* Utility to force Poppins font */
