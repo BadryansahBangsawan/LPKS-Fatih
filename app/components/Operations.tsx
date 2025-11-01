@@ -17,7 +17,7 @@ export default function Operations() {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-neutral-50">
+    <section id="projects" className="py-24 bg-neutral-50 transform scale-110 origin-center">
       <div className="mx-auto max-w-[1500px] px-20">
         {/* Header */}
         <div className="mb-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

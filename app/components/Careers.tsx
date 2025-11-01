@@ -9,38 +9,43 @@ export default function Careers() {
   ];
 
   return (
-    <section id="career" className="py-24">
-      {/* Header 2 kolom */}
-      <div className="mx-auto max-w-6xl px-6 md:px-12">
-        <div className="grid gap-12 md:grid-cols-2">
-          <div>
-            <span className="mb-4 block text-xs font-medium tracking-[0.2em] text-neutral-500">
+    <section className="bg-white py-20 md:py-24">
+      {/* HEADER 2 KOLOM */}
+      <div className="mx-auto max-w-7xl px-6 md:px-12">
+        <div className="grid items-start gap-10 md:grid-cols-12">
+          {/* KIRI */}
+          <div className="md:col-span-7">
+            <div className="mb-3 text-xs font-semibold tracking-[0.2em] text-neutral-500">
               CAREER
-            </span>
-            <h2 className="text-4xl leading-tight font-semibold text-neutral-900 md:text-5xl">
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] text-neutral-900">
               Discover why people love
-              <br /> working here.
-            </h2>
+              <br className="hidden md:block" />
+              working here.
+            </h1>
           </div>
 
-          <div>
-            <h3 className="text-3xl font-semibold text-neutral-900">
-              Careers at Deploi Gold
-            </h3>
-            <p className="mt-4 text-neutral-600">
-              Join a team that’s pioneering the future of gold mining. At Deploi
-              Gold, you’ll work alongside industry experts, embrace innovation,
-              and contribute to sustainable mining practices that make a real
-              difference.
-            </p>
+          {/* KANAN */}
+          <div className="md:col-span-5">
+            <div className="md:pt-7 lg:pt-8">
+              <h2 className="text-2xl md:text-[28px] font-semibold text-neutral-900">
+                Careers at Deploi Gold
+              </h2>
+              <p className="mt-3 max-w-prose text-base md:text-lg leading-relaxed text-neutral-600">
+                Join a team that’s pioneering the future of gold mining. At
+                Deploi Gold, you’ll work alongside industry experts, embrace
+                innovation, and contribute to sustainable mining practices that
+                make a real difference.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Area cokelat + kartu lowongan */}
+      {/* AREA COKELAT + KARTU LOWONGAN */}
       <div
         className="mt-16 w-full py-16"
-        style={{ backgroundColor: "#8a5a2b" }} // tone cokelat sesuai referensi
+        style={{ backgroundColor: "#8a5a2b" }}
       >
         <div className="mx-auto max-w-6xl px-6 md:px-12">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -55,7 +60,6 @@ export default function Careers() {
                 <p className="mt-2 text-sm text-neutral-500">
                   {job.city} · {job.type}
                 </p>
-
                 <a
                   href="#apply"
                   className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-amber-700"
@@ -66,7 +70,7 @@ export default function Careers() {
             ))}
           </div>
 
-          {/* Tombol lihat lebih banyak */}
+          {/* TOMBOL LIHAT LEBIH BANYAK */}
           <div className="mt-10 flex justify-center">
             <a
               href="#more-opportunities"

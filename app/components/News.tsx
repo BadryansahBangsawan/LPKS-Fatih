@@ -34,7 +34,7 @@ export default function News() {
   return (
     <section
       id="news"
-      className="layer-fix min-h-screen flex items-center py-24 bg-white"
+      className="layer-fix min-h-screen flex items-center py-24 bg-white transform scale-110 origin-center"
     >
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <h2 className="text-center font-poppins text-[48px] font-semibold tracking-tight text-neutral-900">

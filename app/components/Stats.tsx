@@ -40,7 +40,7 @@ export default function Stats() {
     // Use a solid background and new stacking context to avoid any subpixel hairline from adjacent sections
     <section
       id="stats"
-      className="relative isolate min-h-screen flex items-center py-24 bg-white"
+      className="relative isolate min-h-screen flex items-center py-24 bg-white transform scale-110 origin-center"
     >
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <h2 className="mb-4 text-center font-poppins text-[48px] font-semibold tracking-tight text-neutral-900">

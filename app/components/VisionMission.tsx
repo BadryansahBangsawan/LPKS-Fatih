@@ -51,7 +51,7 @@ export default function VisionMission() {
   ];
 
   return (
-    <section id="about" className="min-h-screen flex items-start py-20">
+    <section id="about" className="min-h-screen flex items-start py-20 transform scale-110 origin-center">
       <div className="mx-auto w-full md:w-[1274px] px-6 md:px-0">
         <div className="rounded-2xl border border-neutral-200 bg-white shadow-sm w-full h-[725px] p-12 overflow-hidden">
           <div className="h-full flex flex-col items-start">

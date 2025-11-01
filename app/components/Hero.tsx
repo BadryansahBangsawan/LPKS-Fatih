@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[calc(100vh-72px)] items-center overflow-hidden bg-white"
+      className="relative flex min-h-[calc(100vh-72px)] items-center overflow-hidden bg-white transform scale-110 origin-center"
     >
       {/* Container utama */}
       <div className="relative mx-auto w-full max-w-[1440px] px-12 md:px-16 lg:px-20">

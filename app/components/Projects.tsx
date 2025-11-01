@@ -13,7 +13,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-neutral-50">
+    <section id="projects" className="py-24 bg-neutral-50 transform scale-110 origin-center">
       <div className="mx-auto max-w-6xl px-12">
         <div className="mb-10 flex items-center justify-between">
           <h3 className="text-4xl font-semibold text-[#8b5a2b]">

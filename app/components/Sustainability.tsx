@@ -23,7 +23,7 @@ export default function Sustainability() {
   ] as const;
 
   return (
-    <section className="relative isolate layer-fix primary-bg min-h-screen flex items-center py-20">
+    <section className="relative isolate layer-fix primary-bg min-h-screen flex items-center py-20 transform scale-110 origin-center">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <h2 className="font-poppins text-[40px] md:text-[48px] font-semibold tracking-tight !text-white">
           Your Source for Sustainable Gold

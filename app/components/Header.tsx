@@ -10,7 +10,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 transform scale-110 origin-center">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12 py-6">
         <div className="flex items-center gap-5">
           <Link
