@@ -1,29 +1,36 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Stats from "./components/Stats";
-import VisionMission from "./components/VisionMission";
-import Operations from "./components/Operations";
-import News from "./components/News";
-import Sustainability from "./components/Sustainability";
-import Careers from "./components/Careers";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import type { Metadata } from "next";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import HeroSection from "@/app/components/home/HeroSection";
+import FeaturesSection from "@/app/components/home/FeaturesSection";
+import ProgramsSection from "@/app/components/home/ProgramsSection";
+import StatsSection from "@/app/components/home/StatsSection";
+import HowItWorks from "@/app/components/home/HowItWorks";
+import TestimonialsSection from "@/app/components/home/TestimonialsSection";
+import PartnersSection from "@/app/components/home/PartnersSection";
+import CTABanner from "@/app/components/home/CTABanner";
 
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-neutral-50 ">
-      <Header />
-      <main>
-        <Hero />
-        <VisionMission />
-        <Operations />
-        <Stats />
-        <News />
-        <Sustainability />
-        <Careers />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
+export const metadata: Metadata = {
+	title: "LPKS Tana Ilmu – Pelatihan Kerja Bersertifikat BNSP",
+	description:
+		"Lembaga pelatihan kerja swasta terpercaya. Program mekanik, listrik, IT, las – bersertifikat BNSP, siap kerja dalam 2–4 bulan. 87% alumni terserap kerja.",
+};
+
+export default function HomePage() {
+	return (
+		<div className="min-h-screen bg-white">
+			<Navbar />
+			<main>
+				<HeroSection />
+				<FeaturesSection />
+				<ProgramsSection />
+				<StatsSection />
+				<HowItWorks />
+				<TestimonialsSection />
+				<PartnersSection />
+				<CTABanner />
+			</main>
+			<Footer />
+		</div>
+	);
 }
